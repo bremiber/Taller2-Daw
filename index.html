@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Formulario</title>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="formulario, Geekdom, Bar, Cafe, food, game">
+  <!--Agrego hoja de estilo-->
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+
+</head>
+<body>
+    <!--Cabecera-->
+    <header>
+      <section>
+        <img src="geek-dom-ec.jpg" alt="Logo de Geedom" width="200">
+        <div>
+          <h1>Geedom Food and Games</h1>
+          <h2>Game bar and cofe</h2>
+        </div>
+      </section> 
+    </header>
+    <!--Fin Cabecera-->
+
+    <section>
+       <form name="pedido" id="pedido" method="get" autocomplete="on">
+        <!--Ingreso de Nombre -->
+          <label for="nombre">Nombre: </label>
+          <input type="text" id="nombre" autocomplete="name" placeholder="Nombres completos" minlength="20" maxlength="80" required="required"><br>
+          <!--Fin ingreso de Nombre -->
+
+        <!--Ingreso de Correo-->
+        <label for="correo">Correo: </label>
+        <input type="email" id="correo" autocomplete="off" placeholder="correo@electronico.com" required="required"><br>
+        <!--Fin ingreso de Correo-->
+
+        <!--Ingreso de producto a seleccionar-->
+        <label for="producto">Producto a comprar: </label>
+        <input id="producto" list="productos" name="misProductos"><br>
+        <datalist id="productos">
+          <option value="hamburguesa">
+          <option value="café">
+          <option value="cervezas">
+          <option value="camiseta">
+          <option value="gorra">
+        </datalist>
+        <!--Fin Ingreso de producto a seleccionar-->
+
+        <!--Ingreso de fecha-->
+        <label for="fecha">Fecha de entrega: </label>
+        <input type="date" id="fecha"><br><br>
+
+        <!--Envio de formulario-->
+        <div>
+          <input type="submit" name="Enviar"><br>
+        </div>
+
+      </form>
+</body>
+</html>
